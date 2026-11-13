@@ -19,3 +19,9 @@ El universo del que se preparan nuevas muestras está recortado a fechas registr
 ## Desarrollo
 
 HTML, CSS y JavaScript, sin dependencias ni claves. `dataset.json` contiene exclusivamente las tareas y el criterio. GitHub Pages publica la rama `main`, directorio raíz. Para probar localmente: `python3 -m http.server 4183`, abrir la dirección que corresponda. Las pruebas locales de Chromium verifican decisiones, deshacer, persistencia tras recarga, importación/exportación, lectura móvil y disponibilidad offline.
+
+## Instalar como app (PWA)
+
+En el menú de la web, **Instalar como app** abre el diálogo del navegador cuando está disponible. Si todavía no lo ofrece, el botón muestra los pasos para Android/Chrome y iPhone/Safari. En Android: menú de Chrome → Agregar a pantalla principal → Instalar. En iPhone: Compartir en Safari → Agregar a pantalla de inicio; dejar activado Abrir como app web cuando aparezca. Abrir después desde el ícono del clasificador.
+
+El manifiesto incluye identidad y scope del proyecto, ventana standalone, íconos PNG de 192 y 512, variante maskable y apple-touch-icon. Los íconos se generaron desde el favicon SVG propio del proyecto. Se conserva la misma clave de localStorage, la misma muestra y el mismo formato de respaldo. En iPhone Safari y la app tienen guardado separado: exportar primero lo anotado en Safari e importarlo en la app si se empezó a clasificar antes de instalarla.
